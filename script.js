@@ -2,9 +2,9 @@ console.log("Hello World Motherfuckers")
 
 let text = prompt('Digite alguma palavra');
 
-reverseString(text)
+contarCaracteres(text)
 
-function reverseString(text){
-    console.log(text.split('').reverse().join(''));
+function contarCaracteres(text){
+    console.log(text.length);
 }
-//split serve pra seprar um array, reverse para reverter e join para juntar
+//length é usada para contar os caracteres de uma script automáticamente
