@@ -1,9 +1,10 @@
 console.log("Hello World Motherfuckers")
 
-let numero = 10;
+let text = prompt('Digite alguma palavra');
 
-while (numero >= 1) {
-    console.log(numero);
+reverseString(text)
 
-    numero -- // isso serve pra diminuir o valor de uma var em 1 unidade
+function reverseString(text){
+    console.log(text.split('').reverse().join(''));
 }
+//split serve pra seprar um array, reverse para reverter e join para juntar
