@@ -1,11 +1,13 @@
 console.log("Hello World Motherfuckers")
  
-function mensagemPersonalizada() {
-    let nome = prompt("Digite seu nome:");
-    let mensagem = prompt("Digite sua mensagem (ou deixe em branco para usar 'Olá!'):") || "Olá!";
+function media() {
+    let num1 = parseFloat(prompt("Digite o primeiro número:"));
+    let num2 = parseFloat(prompt("Digite o segundo número:"));
+    let num3 = parseFloat(prompt("Digite o terceiro número:"));
     
-    console.log("Olá!"); 
-    console.log(`${mensagem} ${nome}`); // ${} Permite inserir variáveis e expressões diretamente dentro da string.
+    let resultado = (num1 + num2 + num3) / 3;
+    
+    console.log(`A média é: ${resultado}`);
 }
-
-mensagemPersonalizada(); // Chama a função quando a página for carregada
+//O parseFloat é usado para converter uma string em um número decimal
+media();
