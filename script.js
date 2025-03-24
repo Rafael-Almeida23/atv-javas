@@ -1,10 +1,8 @@
 console.log("Hello World Motherfuckers")
 
-let text = prompt('Digite alguma palavra');
+const carro = Object(); // object é uma entidade independente com propiedades
+carro.fabricacao = 'Corvette';
+carro.modelo = 'C8';
+carro.ano = '2020';
 
-contarCaracteres(text)
-
-function contarCaracteres(text){
-    console.log(text.length);
-}
-//length é usada para contar os caracteres de uma script automáticamente
+console.log(carro.modelo); // isso faz com que apenas o modelo apareça no console
