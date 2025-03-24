@@ -1,11 +1,18 @@
 console.log("Hello World Motherfuckers")
  
-for (let i = 1; i <= 20; i++) {
-    if (i % 3 === 0) {
-        console.log(`${i}: Múltiplo de 3`);
-    } else {
-        console.log(`${i}: Não múltiplo de 3`);
-    }
+function verificarPalindromo(palavra) {
+    // deixa a palavra toda em minúscula pra não dar erro
+    palavra = palavra.toLowerCase();
+    
+    let palavraInvertida = palavra.split("").reverse().join("");
+    
+    return palavra === palavraInvertida;
 }
-// o "for" serve para percorrer os números de 1 a 20
-// i++ serve pra adicionar 1 no valor da variavel cada vez que for executado
+
+let palavraDoUsuario = prompt("Digite uma palavra para verificar se é um palíndromo:");
+
+if (verificarPalindromo(palavraDoUsuario)) {
+    console.log("A palavra é um palíndromo!");
+} else {
+    console.log("A palavra não é um palíndromo.");
+}
