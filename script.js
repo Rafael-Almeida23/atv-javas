@@ -1,13 +1,11 @@
 console.log("Hello World Motherfuckers")
  
-function media() {
-    let num1 = parseFloat(prompt("Digite o primeiro número:"));
-    let num2 = parseFloat(prompt("Digite o segundo número:"));
-    let num3 = parseFloat(prompt("Digite o terceiro número:"));
-    
-    let resultado = (num1 + num2 + num3) / 3;
-    
-    console.log(`A média é: ${resultado}`);
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0) {
+        console.log(`${i}: Múltiplo de 3`);
+    } else {
+        console.log(`${i}: Não múltiplo de 3`);
+    }
 }
-//O parseFloat é usado para converter uma string em um número decimal
-media();
+// o "for" serve para percorrer os números de 1 a 20
+// i++ serve pra adicionar 1 no valor da variavel cada vez que for executado
