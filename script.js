@@ -1,16 +1,13 @@
 console.log("Hello World Motherfuckers")
  
-let numeroUsuario = parseFloat(prompt("Digite um número para verificar seu sinal:"));
-function verificarSinal(numero) {
-    if (numero > 0) {
-        console.log("Positivo");
-    } else if (numero < 0) {
-        console.log("Negativo");
-    } else {
-        console.log("Zero");
-    }
+function converterTemperatura(celsius) {
+    let fahrenheit = (celsius * 9/5) + 32; //isso é a fórmula do farenheit
+    return fahrenheit;
 }
 
-verificarSinal(numeroUsuario);
+let temperaturaCelsius = parseFloat(prompt("Digite a temperatura em Celsius:"));
+
+let temperaturaFahrenheit = converterTemperatura(temperaturaCelsius);
+console.log(`${temperaturaCelsius}°C é igual a ${temperaturaFahrenheit}°F`);
 
 
