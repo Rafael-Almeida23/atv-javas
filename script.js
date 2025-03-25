@@ -1,9 +1,13 @@
 console.log("Hello World Motherfuckers")
 
-let nome = prompt("Qual é o seu nome?");
-function saudacao(nome, saudacao = "Bem-vindo(a)") {
-    return `${saudacao}, ${nome}!`;
+let nota = prompt("Digite a sua nota:");
+function verificarAprovacao(nota) {
+    if (nota >= 6) {
+      return "Aprovado";
+    } else {
+      return "Reprovado";
+    }
   }
+  console.log(verificarAprovacao(Number(nota)));
   
-  console.log(saudacao(nome));
   
