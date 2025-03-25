@@ -1,11 +1,13 @@
 console.log("Hello World Motherfuckers")
- 
-let soma = 0;
-let i = 1;
 
-while (i <= 100) {
-    soma += i; // Soma o valor de i à variável soma
-    i++;
+let fraseUsuario = prompt("Digite uma frase:");
+function substituirPalavra(texto) {
+    return texto.replace(/azul/g, "vermelho");
 }
 
-console.log("A soma dos números de 1 a 100 é:", soma);
+let novaFrase = substituirPalavra(fraseUsuario);
+console.log("Frase original:", fraseUsuario);
+console.log("Frase modificada:", novaFrase);
+
+//O replace serve para substituir uma parte de uma string por outra. 
+
