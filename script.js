@@ -1,13 +1,12 @@
 console.log("Hello World Motherfuckers")
 
-let fraseUsuario = prompt("Digite uma frase:");
-function substituirPalavra(texto) {
-    return texto.replace(/azul/g, "vermelho");
+let texto = prompt("Digite uma frase:");
+function verificarTamanho(texto) {
+    if (texto.length > 10) {
+        console.log("A string tem mais de 10 caracteres.");
+    } else {
+        console.log("A string tem 10 caracteres ou menos.");
+    }
 }
-
-let novaFrase = substituirPalavra(fraseUsuario);
-console.log("Frase original:", fraseUsuario);
-console.log("Frase modificada:", novaFrase);
-
-//O replace serve para substituir uma parte de uma string por outra. 
-
+// O .length conta quantos caracteres tem uma palavra ou quantos itens tem uma lista.
+verificarTamanho(texto);
