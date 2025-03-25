@@ -1,4 +1,9 @@
 console.log("Hello World Motherfuckers")
 
-let frutas = ["maçã", "banana", "laranja", "manga", "uva"];
-console.log(frutas[2]);  // A terceira fruta está no 2, pois 0 conta como algarismo
+let nome = prompt("Qual é o seu nome?");
+function saudacao(nome, saudacao = "Bem-vindo(a)") {
+    return `${saudacao}, ${nome}!`;
+  }
+  
+  console.log(saudacao(nome));
+  
