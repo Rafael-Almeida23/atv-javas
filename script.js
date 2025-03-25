@@ -1,13 +1,10 @@
 console.log("Hello World Motherfuckers")
 
-let nota = prompt("Digite a sua nota:");
-function verificarAprovacao(nota) {
-    if (nota >= 6) {
-      return "Aprovado";
-    } else {
-      return "Reprovado";
+for (let i = 0; i <= 30; i++) {
+    if (i % 2 === 0) { 
+      console.log(i);
     }
   }
-  console.log(verificarAprovacao(Number(nota)));
+  
   
   
