@@ -1,13 +1,11 @@
 console.log("Hello World Motherfuckers")
  
-function converterTemperatura(celsius) {
-    let fahrenheit = (celsius * 9/5) + 32; //isso é a fórmula do farenheit
-    return fahrenheit;
+let soma = 0;
+let i = 1;
+
+while (i <= 100) {
+    soma += i; // Soma o valor de i à variável soma
+    i++;
 }
 
-let temperaturaCelsius = parseFloat(prompt("Digite a temperatura em Celsius:"));
-
-let temperaturaFahrenheit = converterTemperatura(temperaturaCelsius);
-console.log(`${temperaturaCelsius}°C é igual a ${temperaturaFahrenheit}°F`);
-
-
+console.log("A soma dos números de 1 a 100 é:", soma);
