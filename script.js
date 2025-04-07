@@ -1,11 +1,13 @@
 console.log("Hello World Motherfuckers");
 
-let entrada = prompt("Digite os números que você quer somar, separados por vírgula:");
-let numeros = entrada.split(',').map(num => parseFloat(num.trim()));
-let soma = 0;
+let contador = 10;
 
-for (let num of numeros) {
-    soma += num;
-}
+let intervalo = setInterval(() => {
+    console.log(contador);
+    contador--;
 
-alert(`A soma total dos números é: ${soma}`);
+    if (contador < 0) {
+        clearInterval(intervalo); // para a contagem quando chega a 0
+        console.log("Lançamento!");
+    }
+}, 1000); // set interval executa a função a cada 1 segundo = 1000 milissegundos
