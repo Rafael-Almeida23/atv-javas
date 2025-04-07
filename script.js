@@ -1,21 +1,11 @@
-console.log("Hello World Motherfuckers")
+console.log("Hello World Motherfuckers");
 
-let palavra = prompt("Digite uma palavra:");
-function contarVogais(palavra) {
-    let contador = 0;
-    let vogais = "aeiouAEIOU";
-    
-    for (let i = 0; i < palavra.length; i++) {
-      if (vogais.includes(palavra[i])) { // Verifica se o caractere é uma vogal
-        contador++;
-      }
-    }
-  
-    console.log("Quantidade de vogais:", contador);
-  }
-   
-  contarVogais(palavra);
-  
-  
-  
-  
+let entrada = prompt("Digite os números que você quer somar, separados por vírgula:");
+let numeros = entrada.split(',').map(num => parseFloat(num.trim()));
+let soma = 0;
+
+for (let num of numeros) {
+    soma += num;
+}
+
+alert(`A soma total dos números é: ${soma}`);
