@@ -1,13 +1,12 @@
 console.log("Hello World Motherfuckers");
 
-let numero = parseInt(prompt("Digite um número:"));
+let letra = prompt("Digite uma letra:").toLowerCase(); // Converte para minúscula
+let vogais = ['a', 'e', 'i', 'o', 'u'];
 
-if (numero % 2 === 0) {
-    // Número é par, então transformamos em ímpar somando 1
-    numero += 1;
-    alert(`O número era par, Agora é ímpar: ${numero}`);
+if (letra.length !== 1 || !isNaN(letra)) {
+    alert("Por favor, digite apenas uma letra.");
+} else if (vogais.includes(letra)) {
+    alert(`A letra "${letra}" é uma VOGAL.`);
 } else {
-    // Número é ímpar, transformamos em par subtraindo 1
-    numero -= 1;
-    alert(`O número era ímpar, Agora é par: ${numero}`);
+    alert(`A letra "${letra}" é uma CONSOANTE.`);
 }
