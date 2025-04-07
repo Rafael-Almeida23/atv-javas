@@ -1,29 +1,12 @@
 console.log("Hello World Motherfuckers");
 
-let ganhoBrutoMensal = parseFloat(prompt("Digite o ganho bruto mensal da empresa:"));
-let totalGanhos = ganhoBrutoMensal * 12;
+let numeros = [];
 
-let totalGastos = 0;
-
-for (let i = 1; i <= 12; i++) {
-    let gasto = parseFloat(prompt(`Digite os gastos do mês ${i}:`));
-    totalGastos += gasto;
+for (let i = 1; i <= 4; i++) {
+    let valor = parseInt(prompt(`Digite o ${i}º número inteiro:`));
+    numeros.push(valor);
 }
 
-let saldoFinal = totalGanhos - totalGastos;
+numeros.sort((a, b) => b - a); // Ordena em ordem decrescente
 
-let mensagem;
-if (saldoFinal > 0) {
-    mensagem = "A empresa teve LUCRO no ano.";
-} else if (saldoFinal < 0) {
-    mensagem = "A empresa teve PREJUÍZO no ano.";
-} else {
-    mensagem = "A empresa fechou o ano com a mesma quantia.";
-}
-
-alert(
-    `Total de Ganhos: R$ ${totalGanhos.toFixed(2)}\n` +
-    `Total de Gastos: R$ ${totalGastos.toFixed(2)}\n` +
-    `Saldo Final: R$ ${saldoFinal.toFixed(2)}\n\n` +
-    `${mensagem}`
-);
+alert("Números em ordem decrescente:\n" + numeros.join(", "));
